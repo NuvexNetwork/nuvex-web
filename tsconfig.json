@@ -22,7 +22,7 @@
     "allowJs": false,
     "incremental": true,
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
