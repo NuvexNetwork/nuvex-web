@@ -44,7 +44,12 @@ function Rays() {
   });
 
   return (
-    <svg className="pointer-events-none absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden>
+    <svg
+      className="pointer-events-none absolute inset-0 h-full w-full"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      aria-hidden
+    >
       {lines.map((line) => (
         <line
           key={line.y}
@@ -63,7 +68,12 @@ function Rays() {
 
 function Links() {
   return (
-    <svg className="pointer-events-none absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden>
+    <svg
+      className="pointer-events-none absolute inset-0 h-full w-full"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      aria-hidden
+    >
       {ecosystem.nodes.map((node) => (
         <line
           key={node.name}
@@ -128,7 +138,11 @@ function HexTile({ node, index }: { node: OrbitNode; index: number }) {
         }}
         whileHover={{ scale: 1.08 }}
       >
-        <svg viewBox="0 0 100 112" className="absolute inset-0 h-full w-full drop-shadow-[0_10px_24px_rgb(0_0_0_/_0.45)]" aria-hidden>
+        <svg
+          viewBox="0 0 100 112"
+          className="absolute inset-0 h-full w-full drop-shadow-[0_10px_24px_rgb(0_0_0_/_0.45)]"
+          aria-hidden
+        >
           <polygon points={HEX} fill="#141416" stroke="#2c2c30" strokeWidth="1.4" />
           <polygon points={HEX} fill="url(#hex-sheen)" />
           <defs>
@@ -139,7 +153,14 @@ function HexTile({ node, index }: { node: OrbitNode; index: number }) {
           </defs>
         </svg>
         <span className="absolute inset-0 grid place-items-center">
-          <img src={node.src} alt="" width={logo} height={logo} className="invert" style={{ width: logo, height: logo }} />
+          <img
+            src={node.src}
+            alt=""
+            width={logo}
+            height={logo}
+            className="invert"
+            style={{ width: logo, height: logo }}
+          />
         </span>
       </motion.span>
     </motion.a>
@@ -158,7 +179,10 @@ function Hub() {
         visible: { opacity: 1, scale: 1, transition: { duration: 1, ease: backOut, delay: 0.2 } },
       }}
     >
-      <div aria-hidden className="orbit-glow absolute top-1/2 left-1/2 size-[340px] -translate-x-1/2 -translate-y-1/2 sm:size-[420px]" />
+      <div
+        aria-hidden
+        className="orbit-glow absolute top-1/2 left-1/2 size-[340px] -translate-x-1/2 -translate-y-1/2 sm:size-[420px]"
+      />
       {rings.map((size, i) => (
         <motion.span
           key={size}
@@ -166,7 +190,12 @@ function Hub() {
           className="absolute top-1/2 left-1/2 rounded-full border border-primary/25"
           style={{ width: size, height: size, marginLeft: -size / 2, marginTop: -size / 2 }}
           animate={reduced ? undefined : { opacity: [0.38, 0.1, 0.38], scale: [1, 1.045, 1] }}
-          transition={{ duration: 5 + i * 1.1, ease: "easeInOut", repeat: Infinity, delay: i * 0.35 }}
+          transition={{
+            duration: 5 + i * 1.1,
+            ease: "easeInOut",
+            repeat: Infinity,
+            delay: i * 0.35,
+          }}
         />
       ))}
       <Image

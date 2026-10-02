@@ -21,15 +21,15 @@ Read this before writing a page. Do not restyle anything; compose the primitives
 
 ## Layout and spacing tokens
 
-| Token                    | Value                                      |
-| ------------------------ | ------------------------------------------ |
-| Container                | `--container` 1070px, gutter 16px          |
-| Section padding          | `--section-y` 80px                         |
-| Banner top padding       | `--section-y-banner` 100px                 |
-| Utility page padding     | `--section-y-utility` 120px                |
-| Title to content gap     | 50px (`mb-[50px]`)                         |
-| Cell padding             | 30px, 24px on dense grids                  |
-| Breakpoints              | `sm` 480px, `md` 768px, `lg` 992px         |
+| Token                | Value                              |
+| -------------------- | ---------------------------------- |
+| Container            | `--container` 1070px, gutter 16px  |
+| Section padding      | `--section-y` 80px                 |
+| Banner top padding   | `--section-y-banner` 100px         |
+| Utility page padding | `--section-y-utility` 120px        |
+| Title to content gap | 50px (`mb-[50px]`)                 |
+| Cell padding         | 30px, 24px on dense grids          |
+| Breakpoints          | `sm` 480px, `md` 768px, `lg` 992px |
 
 Reference gap scale, if you need a value: 4, 8, 10, 12, 14, 16, 18, 24, 30, 40, 50, 60, 70, 80,
 100px.
@@ -191,27 +191,27 @@ Licence Apache-2.0.
 
 ## Routes
 
-| Route                | Template                        |
-| -------------------- | ------------------------------- |
-| `/`                  | home (done)                     |
-| `/about`             | marketing + counters            |
-| `/technology`        | marketing (randomness)          |
-| `/architecture`      | marketing                       |
-| `/network`           | marketing                       |
-| `/nodes`             | marketing (operators)           |
-| `/security`          | marketing                       |
-| `/developers`        | marketing                       |
-| `/docs`              | documentation landing           |
-| `/economics`         | pricing-style grid + table      |
-| `/ecosystem`         | stacked case list               |
-| `/ecosystem/[slug]`  | `CaseLayout`                    |
-| `/blog`              | blog grid                       |
-| `/blog/[slug]`       | `ArticleLayout`                 |
-| `/contribute`        | row list                        |
-| `/contribute/[slug]` | long-form area page             |
-| `/contact`           | form + quote block              |
-| `/changelog`         | `UtilityPage`                   |
-| `/style-guide`       | `UtilityPage`                   |
-| `/licenses`          | `UtilityPage`                   |
-| `/privacy`, `/terms` | `LegalPage`                     |
-| `/app/*`             | `ConsolePage` inside the shell  |
+| Route                | Template                       |
+| -------------------- | ------------------------------ |
+| `/`                  | home (done)                    |
+| `/about`             | marketing + counters           |
+| `/technology`        | marketing (randomness)         |
+| `/architecture`      | marketing                      |
+| `/network`           | marketing                      |
+| `/nodes`             | marketing (operators)          |
+| `/security`          | marketing                      |
+| `/developers`        | marketing                      |
+| `/docs`              | documentation landing          |
+| `/economics`         | pricing-style grid + table     |
+| `/ecosystem`         | stacked case list              |
+| `/ecosystem/[slug]`  | `CaseLayout`                   |
+| `/blog`              | blog grid                      |
+| `/blog/[slug]`       | `ArticleLayout`                |
+| `/contribute`        | row list                       |
+| `/contribute/[slug]` | long-form area page            |
+| `/contact`           | form + quote block             |
+| `/changelog`         | `UtilityPage`                  |
+| `/style-guide`       | `UtilityPage`                  |
+| `/licenses`          | `UtilityPage`                  |
+| `/privacy`, `/terms` | `LegalPage`                    |
+| `/app/*`             | `ConsolePage` inside the shell |
