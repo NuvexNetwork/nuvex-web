@@ -1,0 +1,17 @@
+node_modules/
+.pnpm-store/
+.next/
+out/
+dist/
+*.tsbuildinfo
+coverage/
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+*.log
+.idea/
+.vscode/
+*.swp
